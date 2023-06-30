@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 align = "center">All in one calculator</h1>
+    <input type="text" id="calculate">
+    <button onclick="calculate()"> calculate</button>
+    <p id="result"></p>
+    <script>
+        function calculate(){
+            let x = document.getElementById("calculate").value;
+            let y = document.getElementById("result");
+            y.innerHTML = "your answer is "+ eval(x);
+
+        }
+    </script>
+</body>
+</html>

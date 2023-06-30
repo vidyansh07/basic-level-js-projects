@@ -1,0 +1,26 @@
+#password {
+  width: 250px;
+  padding: 10px;
+  float: left;
+  border: 1px solid #ccc;
+}
+#icon {
+  float: left;
+  font-size: 25px;
+  padding: 10px;
+  display: none;
+}
+
+#massage {
+  float: left;
+  height: auto;
+  width: 250px;
+  margin-top: 1px;
+  border: 1px solid #ccc;
+  clear: left;
+  display: none;
+}
+
+#password:focus {
+  outline: none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 align = "center">Image Effect</h1>
+    <div id="page">
+        <img src="" alt="" width="600" height="400" id="pic">
+        <br><br><br>
+        <b>Brighness</b>
+        <input type="range" min="0" max="150" oninput="bright()" id="brightness">
+        <b>Contrast</b>
+        <input type="range" min="0" max="400" oninput="contrast()" id="contrast">
+        <b>Saturate</b>
+        <input type="range" min="0" max="400" oninput="saturate()" id="saturate">
+    </div>
+    <section>
+        <input type="file" name="" id="upload" onchange="upload()">
+    </section>
+    <script>
+        function bright(){
+            let x  = document.getElementById("brightness").value;
+            let y = document.getElementById("pic");
+            y.style.WebkitFilter = "brightness("+x+"%)"
+            y.style.filter = "brightness("+x+"%)";
+        }
+        function contrast(){
+            let x  = document.getElementById("contrast").value;
+            let y = document.getElementById("pic");
+            y.style.WebkitFilter = "contrast("+x+"%)"
+            y.style.filter = "contrast("+x+"%)";
+        }
+        function saturate(){
+            let x  = document.getElementById("saturate").value;
+            let y = document.getElementById("pic");
+            y.style.WebkitFilter = "saturate("+x+"%)"
+            y.style.filter = "saturate("+x+"%)";
+        }
+        function upload(){
+            let x = document.getElementById("upload").value.replace(/.*(\/|\\)/,"");
+            let y = document.getElementById("pic");
+            y.src = x;
+
+        }
+    </script>
+</body>
+</html>

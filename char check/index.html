@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="input" name="name">
+    <input type="submit" onclick="wap()">
+    <script> 
+        function wap(){
+            let x = document.getElementById("input").value;
+            isNaN(x)? window.alert("Please Enter a number."):window.alert("your input data in number.");
+        }
+    </script>
+</body>
+</html>

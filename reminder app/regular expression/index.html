@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+        Password <br>
+        <input type="password" name="password" id = "password" onclick="show_massage()" oninput="check()">  <i class="fa fa-check" id="icon"> </i>
+        <div id="massage">
+            <p id="first">UpperCase Charector</p>
+            <p id="second">LowerCase Charector</p>
+            <p id="third">numbers</p>
+
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

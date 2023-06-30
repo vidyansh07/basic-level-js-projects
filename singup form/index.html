@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form >
+            <h1 id = "singup" >Singup form</h1>
+
+            FIRST NAME: <br>
+            <input type="text" name="firstname" id="title1" onclick="fname_validation_close()" onblur="fname_validation()"   > <i class="fa fa-check" style="font-size:28px;display:none;" id="tick"></i><br>
+            LAST NAME: <br>
+            <input type="text" name="lastname" id="title2" onclick="lname_validation_close()"  onblur="lname_validation()"> <i class="fa fa-check" style="font-size:28px;display:none;" id="tick1"></i><br>
+            MOB NO: <br>
+            <input type="text" name="number" id="mob1" onblur="mobile_val()"> <i class="fa fa-check" style="font-size:28px;display:none;" id="tick2"></i><br>
+            RE ENTER MOB NO: <br>
+            <input type="number" name="number" id="mob2" onblur="renm"> <i class="fa fa-check" style="font-size:28px;display:none;" id="tick2"></i><br>
+            EMAIL: <br>
+            <input type="email" name="EMAIL" id="email"> <i class="fa fa-check" style="font-size:28px;display:none;" id="tick"></i><br>
+            USERNAME: <br>
+            <input type="text" name="username" id = "username" onclick="uname()"> <i class="fa fa-check" style="font-size:28px;display:none;" id="tick"></i><br>
+            PASSWORD: <br>
+            <input type="password" name="password" id="password" > <i class="fa fa-check" style="font-size:28px;display:none;" id="tick"></i> <br>
+            <div class="submit"><button disabled ="disabled" id="submit" onclick="title()" value="singup">submit</button></div>
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

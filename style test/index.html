@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #range{
+            position: fixed;
+            bottom: 0;
+            left: 54%;
+        }
+        #fixed-box{
+            width: 250px;
+            height: 80px;
+            background: red;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+        }
+        #showtext{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="result">
+        Vidyansh triapthi
+    </h1>
+    <div id="fixed-box">
+        <p id="showtext"></p>
+        <input id="range" type="range" min="0" max="1000" oninput="demo()">
+    </div>
+    <script>
+        function demo(){
+            let x = document.getElementById("range").value;
+            let y = document.getElementById("result");
+            y.style.fontSize = x;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<fieldset>
+<legend>Sign UP form</legend>
+<form>
+
+Firstname<br>
+<input type="text" name="firstname" id="firstname" onblur="fname_val()" onclick="fname_val_close()">
+ <i class="fa fa-check" style="font-size:28px;display:none;" id="tick"></i>
+<br><br>
+
+Lastname<br>
+<input type="text" name="lastname" id="lastname" onclick="fname_val();lname_val_close()" onblur="lname_val()">
+ <i class="fa fa-check" style="font-size:28px;display:none;"></i>
+<br><br>
+
+Mobile<br>
+<input type="text" name="mobile" id="mobile" onclick="fname_val();lname_val()" onblur="mobile_val()">
+ <i class="fa fa-check" style="font-size:28px;display:none;"></i>
+<br><br>
+
+Re-mobile<br>
+<input type="number" name="remobile" id="remobile" onclick="fname_val();lname_val()">
+ <i class="fa fa-check" style="font-size:28px;display:none;"></i> 
+<br><br>
+
+Email<br>
+<input type="email" name="email" id="email" onclick="fname_val();lname_val()">
+ <i class="fa fa-check" style="font-size:28px;display:none;"></i>
+<br><br>
+
+Username<br>
+<input  type="text" name="username" id="username" onclick="fname_val();lname_val()">
+ <i class="fa fa-check" style="font-size:28px;display:none;"></i>
+<br><br>
+
+Password<br>
+<input type="password" name="password" id="password" onclick="fname_val();lname_val()" onclick="fname_val()">
+ <i class="fa fa-check" style="font-size:28px;display:none;"></i>
+<br><br>
+
+<input disabled="disabled" type="submit" value="Sign Up!" id="submit">
+</form>
+</fieldset>
+<script src="script.js"></script>
+</body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Enter your number:
+        <input type="text" id="check" oninput="wap()">
+        <button id = "btn" onclick="return wap()">check</button>
+        <p id="paragraf"></p>
+    </form>
+    <script>
+        function wap(){
+            let x = document.getElementById("check").value;
+            let y = x%2==0 ? x+" is the even number": x+" is the odd number";
+            document.getElementById("paragraf").innerHTML = y;
+            return false;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+section {
+  width: 982px;
+  height: 555px;
+  margin: 0 auto;
+  border: 5px solid black;
+  background: black;
+}

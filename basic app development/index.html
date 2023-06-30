@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 150px;
+            height: 150px;
+            border:  1px solid #ccc;
+            float: left;
+            clear: left ;
+            margin-top: 10px;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <input type="file"   id="upload" onchange="wap()">
+        <div class="container" id = "box">
+
+        </div>
+    </h1>
+
+    <script>
+        function wap(){ 
+            let x = document.getElementById("upload").value.replace(/.*(\/|\\)/,'');
+            y = document.getElementById("box");
+            y.style.backgroundImage = "url("+x+")";
+        }
+    </script>
+</body>
+</html>

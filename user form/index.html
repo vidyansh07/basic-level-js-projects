@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return wap()">
+        Name:
+        <br>
+        <input type="text" name="username" id = "username">
+        <br>
+        Password:
+        <br>
+        <input type="password" name="password" id="password">
+        <br>
+        Enter your number: <br>
+        <input type="text" id = "number">
+        <br>
+        Re Enter your modile number: <br>
+
+        <input type="text" id = "renum">
+        <br>
+        <input type="submit" value="login">
+    </form>
+    <h1  id="result"></h1>
+    <script>
+        function wap(){
+            let user = document.getElementById("username").value;
+            let password = document.getElementById("password").value;  
+            let z = user == "vidyansh" && password =="agtm" ? "login success" : "login failed";
+            let a = document.getElementById("result");
+            a.innerHTML = z;
+            let number = document.getElementById("number").value;
+            let renum = document.getElementById("renum").value;
+            window.alert(number == renum ? "click on next": "wrong number rewrite your number.") 
+            return false;
+        }
+
+
+    </script>
+</body>
+</html>
